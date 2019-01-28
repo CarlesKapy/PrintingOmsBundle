@@ -1,0 +1,16 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+
+    Tmtfactory\PrintingOmsBundle\Controller\:
+        resource: '../../../src/Controller'
+        tags: ['controller.service_arguments']
+
+    Tmtfactory\PrintingOmsBundle\Handler\:
+        resource: '../../../src/Handler'
+        public: true
+        tags:
+            - { name: tactician.handler, typehints: true }

@@ -1,0 +1,13 @@
+api_v1_order:
+    resource: Tmtfactory\PrintingOmsBundle\Controller\RestAPI\OrderController
+    type: rest
+    prefix: /api/v1
+
+api_v1_order_line:
+    resource: Tmtfactory\PrintingOmsBundle\Controller\RestAPI\OrderLineController
+    type: rest
+    prefix: /api/v1
+
+front:
+    resource: Tmtfactory\PrintingOmsBundle\Controller\Front\FrontController
+    type: annotation
