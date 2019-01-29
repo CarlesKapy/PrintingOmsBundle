@@ -21,7 +21,7 @@ class FrontController extends AbstractController
      */
     public function indexAction()
     {
-        return $this->render("Front/index.html.twig");
+        return $this->render("@TmtfactoryPrintingOms/Front/index.html.twig");
     }
 
 }

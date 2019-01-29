@@ -71,10 +71,10 @@ class OrderController extends AbstractFOSRestController
 
         $view = new View($response);
 
-        $serializationGroups = ["default"];
-        $context = new Context();
-        $context->setGroups($serializationGroups);
-        $view->setContext($context);
+        //$serializationGroups = ["default"];
+        //$context = new Context();
+        //$context->setGroups($serializationGroups);
+        //$view->setContext($context);
 
         return $this->handleView($view);
     }
