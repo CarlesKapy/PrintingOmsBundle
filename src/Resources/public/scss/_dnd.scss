@@ -1,0 +1,37 @@
+.smooth-dnd-container{
+  &.horizontal {
+    height: 99vh;
+    display: flex;
+    flex: 1;
+
+    & > span {
+      width: 100%;
+      display: flex;
+
+      section {
+        max-height: 100%;
+        background-color: #A0A0A066;
+
+        & > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & > .smooth-dnd-draggable-wrapper, & > span {
+      width:90%;
+
+      & > article {
+        max-width: none;
+      }
+
+    }
+
+  }
+}
