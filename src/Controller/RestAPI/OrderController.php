@@ -49,7 +49,7 @@ class OrderController extends AbstractFOSRestController
      *
      * @return Response
      */
-    public function getOrderAction($status)
+    public function getOrderAction($status = null)
     {
         if (is_null($status)) {
             $statuses = $this->orderRepository->getAllStatus();

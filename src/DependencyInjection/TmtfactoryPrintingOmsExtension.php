@@ -19,4 +19,9 @@ class TmtfactoryPrintingOmsExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
+
+    public function getAlias()
+    {
+        return 'tmt_printing_oms';
+    }
 }
