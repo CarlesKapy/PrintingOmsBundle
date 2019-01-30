@@ -13,19 +13,13 @@ import OrderCard from './order-card';
 import LaneHeader from './lane-header';
 
 // Assets
-import Background from '../../img/background.jpg';
 import {withStyles} from "@material-ui/core/styles/index";
 
 const styles = {
     boardContainer: {
         flexDirection: "row",
         justifyContent: "center",
-        backgroundColor: "white",
-
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(${Background})`,
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundColor: "transparent",
     },
     lane: {
         flex:1,
