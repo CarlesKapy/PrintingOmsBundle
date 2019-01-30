@@ -1,19 +1,22 @@
+// React
 import React from 'react';
 import { connect as connectFetch } from 'react-refetch'
 import { connect } from 'react-redux'
 import Board from 'react-trello';
-import { PropagateLoader } from 'react-spinners';
+import { PropagateLoader }  from 'react-spinners';
 
-import Typography from '@material-ui/core/Typography';
-import grey from '@material-ui/core/colors/grey';
-import CssBaseline from '@material-ui/core/CssBaseline';
+// Material UI
+import {withStyles} from "@material-ui/core/styles/index";
+import Typography   from '@material-ui/core/Typography';
+import grey         from '@material-ui/core/colors/grey';
+import CssBaseline  from '@material-ui/core/CssBaseline';
+
+// App config
+if (!config) require('../config');
 
 // Custom components
-import OrderCard from './order-card';
-import LaneHeader from './lane-header';
-
-// Assets
-import {withStyles} from "@material-ui/core/styles/index";
+import OrderCard    from './order-card';
+import LaneHeader   from './lane-header';
 
 const styles = {
     boardContainer: {
@@ -172,9 +175,21 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapPropsToRequestsToProps = props => ({
-    toDo: { url: 'api/v1/order?status[]=0', refreshInterval: 100000, refreshing: true },
-    inProgress: { url: 'api/v1/order?status[]=1', refreshInterval: 100000, refreshing: true },
-    done: { url: `api/v1/order?status[]=2`, refreshInterval: 100000, refreshing: true },
+    toDo:{
+        url: 'api/v1/order?status[]=0',
+        refreshInterval: config.REFRESH_INTERVAL,
+        refreshing: true
+    },
+    inProgress:{
+        url: 'api/v1/order?status[]=1',
+        refreshInterval: config.REFRESH_INTERVAL,
+        refreshing: true
+    },
+    done:{
+        url: `api/v1/order?status[]=2`,
+        refreshInterval: config.REFRESH_INTERVAL,
+        refreshing: true
+    }
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
