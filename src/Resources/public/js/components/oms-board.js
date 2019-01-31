@@ -42,6 +42,7 @@ class OmsBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+        this.refreshTimeout = null;
     }
 
     publishEvent = (action) => {
@@ -69,6 +70,17 @@ class OmsBoard extends React.Component {
                     errorLiterals.push(this.props[status].value.error);
                 }
             });
+        }
+
+        if (!areAllColumnsFullfilled || isError) {
+            if (this.refreshTimeout === null) {
+                this.refreshTimeout = setTimeout(() => {
+                    location.reload();
+                }, 30000);
+            }
+        } else {
+            clearTimeout(this.refreshTimeout);
+            this.refreshTimeout = null;
         }
 
         const loading =
