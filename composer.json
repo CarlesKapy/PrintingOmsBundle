@@ -17,9 +17,12 @@
         "league/tactician-bundle": "^1.1",
         "symfony/webpack-encore-bundle": "^1.1",
         "symfony/webpack-encore-pack": "^1.0",
-        "symfony/yaml": "^4.1",
-        "symfony/twig-bundle": "^4.1",
-        "symfony/validator": "^4.1"
+        "symfony/yaml": "^3.4 || ^4.1",
+        "symfony/twig-bundle": "^3.4 || ^4.1",
+        "symfony/validator": "^3.4 || ^4.1"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "*"
     },
     "autoload": {
         "psr-4": {
@@ -30,8 +33,5 @@
         "psr-4": {
             "Tmtfactory\\PrintingOmsBundle\\Tests\\": "tests/"
         }
-    },
-    "require-dev": {
-        "symfony/phpunit-bridge": "*"
     }
 }
