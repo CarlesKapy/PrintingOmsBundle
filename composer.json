@@ -1,5 +1,6 @@
 {
     "name": "tmtfactory/printing-oms-bundle",
+    "description": "Printing Order Management System bundle for Symfony",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
