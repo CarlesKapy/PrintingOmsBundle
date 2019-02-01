@@ -25,5 +25,13 @@
         "psr-4": {
             "Tmtfactory\\PrintingOmsBundle\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tmtfactory\\PrintingOmsBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "*"
     }
 }
