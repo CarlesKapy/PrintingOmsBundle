@@ -23,7 +23,7 @@
         "symfony/validator": "^3.4 || ^4.1"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "*"
+        "symfony/phpunit-bridge": "^3.4 || ^4.1"
     },
     "autoload": {
         "psr-4": {
