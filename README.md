@@ -1,4 +1,9 @@
 # [VICA] OMS Base
+[![Build Status](https://travis-ci.org/CarlesKapy/PrintingOmsBundle.svg?branch=development)](https://travis-ci.org/CarlesKapy/PrintingOmsBundle)
+[![Latest Stable Version](https://poser.pugx.org/tmtfactory/printing-oms-bundle/v/stable)](https://packagist.org/packages/tmtfactory/printing-oms-bundle)
+[![Total Downloads](https://poser.pugx.org/tmtfactory/printing-oms-bundle/downloads)](https://packagist.org/packages/tmtfactory/printing-oms-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/tmtfactory/printing-oms-bundle/v/unstable)](https://packagist.org/packages/tmtfactory/printing-oms-bundle)
+[![License](https://poser.pugx.org/tmtfactory/printing-oms-bundle/license)](https://packagist.org/packages/tmtfactory/printing-oms-bundle)
 
 Installation
 ============
