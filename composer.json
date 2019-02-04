@@ -3,6 +3,7 @@
     "description": "Printing Order Management System bundle for Symfony",
     "type": "symfony-bundle",
     "license": "MIT",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Carles Capell",
